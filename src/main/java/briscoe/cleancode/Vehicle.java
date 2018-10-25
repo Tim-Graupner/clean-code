@@ -20,7 +20,7 @@ public class Vehicle {
 		private String make;
 		private String model;
 		private Integer year;
-		private Color color;		
+		private Color color;
 		private int miles;
 
 		public Builder(final String vin, final boolean blacklisted) {
@@ -52,17 +52,39 @@ public class Vehicle {
 			this.miles = miles;
 			return this;
 		}
-		
+
 		public Vehicle build() {
 			return new Vehicle(this);
 		}
 
 	}
-	
-	// HTML & Markdown
 
 	public String getVin() {
 		return vin;
+	}
+
+	public boolean isBlacklisted() {
+		return blacklisted;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public Integer getYear() {
+		return year;
+	}
+
+	public int getMiles() {
+		return miles;
+	}
+
+	public Color getColor() {
+		return color;
 	}
 
 	@Override
@@ -72,11 +94,11 @@ public class Vehicle {
 
 	@Override
 	public boolean equals(final Object obj) {
-		if(this == obj)
+		if (this == obj)
 			return true;
-		if(!(obj instanceof Vehicle))
+		if (!(obj instanceof Vehicle))
 			return false;
-		final Vehicle other = (Vehicle)obj;
+		final Vehicle other = (Vehicle) obj;
 		return StringUtils.equalsIgnoreCase(vin, other.vin);
 	}
 

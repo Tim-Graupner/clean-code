@@ -1,6 +1,7 @@
 package briscoe.cleancode;
 
 import java.util.HashSet;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.Set;
 
@@ -38,13 +39,10 @@ public class VehicleInMemoryDao implements VehicleDao {
 	}
 
 	@Override
-	public Vehicle findOne(final String vin) {
+	public Vehicle expectToFindOne(final String vin) {
 		final Optional<Vehicle> maybeVehicle = vehicles.stream().filter(vehicle -> vehicle.getVin().equalsIgnoreCase(vin)).findFirst();
 
-		if(maybeVehicle.isPresent())
-			return maybeVehicle.get();
-
-		return null;
+		return maybeVehicle.orElseThrow(() -> new NoSuchElementException(String.format("this vin %s wasn't found.", vin)));
 	}
 
 }
