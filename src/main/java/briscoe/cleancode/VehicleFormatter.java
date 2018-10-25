@@ -2,8 +2,8 @@ package briscoe.cleancode;
 
 public class VehicleFormatter {
 
-	private Vehicle vehicle;
-	
+	private final Vehicle vehicle;
+
 	public static VehicleFormatter byVin(final String vin) {
 		return new VehicleFormatter(vin);
 	}
