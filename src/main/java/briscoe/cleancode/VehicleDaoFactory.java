@@ -11,7 +11,7 @@ public class VehicleDaoFactory {
 	}
 
 	private static VehicleDao usingVehicleMapDao() {
-		return new VehicleMapDao();
+		return new VehicleInMemoryDao();
 	}
 
 	private VehicleDaoFactory() {
