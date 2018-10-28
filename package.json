@@ -1,0 +1,32 @@
+{
+  "name": "clean-code",
+  "version": "1.0.0",
+  "description": "Exercise for clean coding.",
+  "main": "index.js",
+  "scripts": {
+    "run": "tsc && node bin/Main.js",
+    "build": "tsc",
+    "test": "tsc && jest",
+    "coverage": "tsc && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob-briscoe/clean-code.git"
+  },
+  "author": "Jacob Briscoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacob-briscoe/clean-code/issues"
+  },
+  "homepage": "https://github.com/jacob-briscoe/clean-code#readme",
+  "dependencies": {
+    "@types/node": "^10.12.0",
+    "node": "^11.0.0",
+    "typescript": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.8",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4"
+  }
+}
