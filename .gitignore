@@ -1,3 +1,4 @@
+# These are files and directories I'd like to ignore.
 /bin/
 /target/
 .classpath
