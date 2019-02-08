@@ -1,4 +1,5 @@
 # clean-code
+
 To run locally you can use the following commands:
 - npm install - downloads all dependencies
 - npm run run - runs Main.ts, useful as an integration testing harness.
