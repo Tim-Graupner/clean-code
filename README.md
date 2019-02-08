@@ -1,5 +1,4 @@
 # clean-code
-Hello, this is a change on my new branch.
 
 To run locally you can use the following commands:
 - npm install - downloads all dependencies
