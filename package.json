@@ -1,7 +1,7 @@
 {
   "name": "clean-code",
   "version": "1.0.0",
-  "description": "Exercise for clean coding.",
+  "description": "Exercise for clean coding using Typescript.",
   "main": "index.js",
   "scripts": {
     "run": "tsc && node bin/main/typescript/Main.js",
