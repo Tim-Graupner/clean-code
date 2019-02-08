@@ -1,4 +1,4 @@
-# clean-code
+## clean-code
 
 To run locally you can use the following commands:
 - npm install - downloads all dependencies
