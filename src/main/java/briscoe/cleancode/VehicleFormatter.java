@@ -46,11 +46,7 @@ public class VehicleFormatter {
 	}
 
 	private String markdownTemplate() {
-		final StringBuilder markdown = new StringBuilder();
-		markdown.append("# Vehicle Details\n");
-		markdown.append("VIN | Blacklisted | Make | Model | Year | color | Miles\n");
-		markdown.append("--- | --- | --- | --- | --- | --- | ---\n");
-		markdown.append("%1$s | %2$s | %3$s | %4$s | %5$s | %6$s | %7$s");
+		final String markdown = MARKDOWN_TEMPLATE;
 		return markdown.toString();
 	}
 
