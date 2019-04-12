@@ -21,11 +21,11 @@ public class VehicleFormatter {
 	}
 
 	public String toHtml() {
-		return render(htmlTemplate());
+		return render(HTML_TEMPLATE);
 	}
 
 	public String toMarkdown() {
-		return render(markdownTemplate());
+		return render(MARKDOWN_TEMPLATE);
 	}
 
 	private String render(final String template) {
@@ -39,16 +39,6 @@ public class VehicleFormatter {
 				vehicle.getMiles());
 	}
 
-	private String htmlTemplate() {
-		final String html = HTML_TEMPLATE;
-
-		return html.toString();
-	}
-
-	private String markdownTemplate() {
-		final String markdown = MARKDOWN_TEMPLATE;
-		return markdown.toString();
-	}
 
 	private VehicleFormatter(final String vin) {
 		this.vehicle = VehicleDaoFactory.vehicleDao().expectToFindOne(vin);
